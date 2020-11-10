@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- Google Analytics -- needs to be replaced -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1KCL0D6BDR"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-1KCL0D6BDR');
+        </script>
+
+		<!-- Meta Data Content -->
+		<meta charset="UTF-8">
+		<meta name="description" content="Receive real time alerts about Genshin Impact via Discord">
+		<meta name="keywords" content="Genshin Impact, Genshin, Impact, News, Notification, Webhook, Gacha, Prismgems, Paimon, Genshin News">
+		<meta name="author" content="Peter Lord">
+		<meta name="copyright" content="Peter Lord. all rights reserved.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="revisit-after" content="1 days">
+		<meta name="robots" content="index">
+		<meta name="image" content="https://genshinnews.com/paimon.png">
+
+		<!-- Open Graph / Facebook Meta Data Content-->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://genshinnews.com/">
+		<meta property="og:title" content="Genshin News Notifications">
+		<meta property="og:description" content="Receive real time alerts about Genshin Impact">
+		<meta property="og:image" content="https://genshinnews.com/paimon.png">
+
+		<!-- Twitter Meta Data Content -->
+		<meta property="twitter:card" content="photo">
+		<meta property="twitter:url" content="http://genshinnews.com/">
+		<meta property="twitter:title" content="Genshin News Notifications">
+		<meta property="twitter:description" content="Receive real time alerts about Genshin Impact">
+		<meta property="twitter:image" content="https://genshinnews.com/paimon.png">
+
+
+
+    <title>Genshin News Notifier</title>
+</head>
+<body>
+    <div class="herocontainer">
+        <div class="itemcontainer">
+            <div class="intro">
+                <h1>Genshin News</h1>
+                
+                <img class="gif" src="paimon.png" alt="floating fairy"><br>
+                
+                <span class="about">Genshin News is an automated tool that relays news updates<br> from <a href="https://genshin.mihoyo.com/en/news" rel="noopener">miHoYo's website</a> to your designated Discord channel.<br></span>
+                
+                <div class="connect">   
+                    <button class="createwebhook button" onclick="location.href='http://genshinnews.com/webhook';">Create Webhook</button>
+                    <span class="access">This requires permissions to create and manage a webhook on your server</span>
+                </div>
+            </div>
+
+            <div class="body">
+                <h3>Stats</h3>
+                <div class="stats">
+                    Total Scrapes: <span class="scrapes stats"></span><br>
+                    Articles Shared: <span class="articles stats"></span><br>
+                    Discord Subscribers: <span class="subscribers stats"></span><br>
+                    Last Post: <span class="last stats"></span>
+                    </span>
+                </div>
+
+                <h3>FAQs</h3>
+                <span class="question">What is a webhook?</span>
+                <span class="answer">A webhook delivers data to a Discord channel as it happens, meaning you get data immediately. </span>
+
+                <span class="question">How do I remove a webhook?</span>
+                <span class="answer">Go to your channel settings ➡ integrations ➡ webhooks ➡ delete webhook.</span>
+
+                <span class="question">How often do you check miHoYo's website?</span>
+                <span class="answer">Every minute</span>
+
+                <span class="question">What does it look like when I receive a notification?</span>
+                <span class="answer"><a href="https://cdn.discordapp.com/attachments/759264099602530335/768249562929823785/unknown.png" rel="noopener" target="_blank">Example of a post</a></span>
+
+                
+            </div>
+
+            <div class="contact">
+                <button class="button discordbutton" onclick="location.href='https://discord.gg/RadhQRM';">Join my Discord</button>
+                <button class="button twitterbutton" onclick="location.href='https://twitter.com/ptrlrd';">Tweet me</button>
+                <button class="button patreonbutton" onclick="location.href='https://www.patreon.com/ptrlrd?fan_landing=true';">Subscribe on Patreon</button>
+            </div>
+
+            <div class="footer">
+                Created by <a href="https://ptrlrd.com" rel="noopener" target="_blank">Yitsy</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<style>
+    h1 {
+        margin-bottom:20px;
+    }
+
+    body{
+        text-align: center;
+        background-color: rgba(255,255,255,.95);
+        border-radius: 15px;    
+    }
+
+    body, 
+    .connect,
+    .body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    html{
+        background-color: #AEC6CF;
+        display: flex;
+        justify-content:center;
+    }
+
+    .herocontainer {
+        display: flex;
+    }
+
+    .online {
+        color: #1CD939;
+    }
+
+    .offline{
+        color: tomato;    
+    }
+
+    .itemcontainer {
+        margin: auto;
+    }
+
+    .button {
+        border: none;
+        color: white;
+        text-shadow: 1px 1px rgba(0,0,0,.5);
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 16px;
+        padding-right: 16px;
+        font-weight: bold;
+        border: 1px rgba(0,0,0,.5) solid;
+    }
+
+    .createwebhook,
+    .discordbutton {
+        box-shadow: 3px 3px #2c46a5;
+        outline: none;
+    }
+
+    .createwebhook {
+        font-size: 1.25em;
+        background-color: rgba(114, 137, 218,.75);
+        align-self: center;
+        padding-top: 5px;
+    }
+
+    .createwebhook:hover,
+    .discordbutton:hover{
+        background-color:rgb(36, 54, 160, .75);
+        outline: none;
+    }
+
+    .button:active{
+        outline: none;
+        border: none;
+        box-shadow: none;
+        transform: translate(2.5%, 7%);
+    }
+
+    .access {
+        font-size: .95em;
+    }
+
+    .question {
+        padding-top: 15px;
+        font-weight: bold;
+    }
+
+    .question, 
+    .answer {
+        text-align: left;
+        padding-left: 10%;
+    }
+
+    .contact {
+        padding-top:15px;
+        padding-bottom: 5px;
+        display:flex;
+        justify-content: center;
+    }
+
+    .button {
+        height: 44px;
+        border-color: transparent;
+    }
+
+    .discordbutton {
+        background-color: rgba(114, 137, 218,.75);
+        margin-right: 25px;
+        
+    }
+
+    .twitterbutton {
+        background-color: rgba(0, 172, 238, .75); 
+        box-shadow: 3px 3px #0085c7;
+        outline: none;
+        margin-right: 25px;
+    }
+
+    .twitterbutton:hover{
+        background-color:#0085c7;
+        outline: none;
+    }
+
+    .patreonbutton {
+        background-color: rgba(249, 104, 84, .75); 
+        box-shadow: 3px 3px #c51d07;
+        outline: none;
+    }
+
+    .patreonbutton:hover {
+        background-color:#c51d07;
+        color:white;
+    }
+
+    .patreonbutton, .discordbutton{
+        margin-bottom: 15px;
+    }
+
+    .footer {
+        padding-bottom: 25px;
+    }
+
+    .gif {
+        height: 150px;
+        width: 150px;
+        padding-bottom: 15px;
+    }
+
+</style>
+
+<script>
+    const scrapes = document.querySelector(".scrapes")
+    const articles = document.querySelector(".articles")
+    const subscribers = document.querySelector(".subscribers")
+    const last = document.querySelector(".last")
+
+    fetch('https://genshinnews.com/statsJSON')
+        .then(response => response.json())
+        .then(data => {            
+                scrapes.textContent = data.totalScrapes,
+                articles.textContent = data.totalSuccessful,
+                subscribers.textContent = data.totalWebhooks,
+                last.textContent = new Date(data.lastPosted)
+            });
+
+</script>
+</html>
