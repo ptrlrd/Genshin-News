@@ -11,7 +11,7 @@ Genshin News is an automated notification system for Discord. This application s
 Visiting MiHoYo's website is very tedious and often extremely slow, I spent too much of my time visit their website to acquire information regarding their game. To free up some of my time, I created Genshin News to do the work for me.
 
 ## Built With
-* Node.js
+* [Node.js](https://nodejs.org/en/)
 * HTML
 * CSS
 
