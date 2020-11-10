@@ -9,10 +9,6 @@ An automation news system for the game Genshin News built in Node.js, HTML, and 
 
 ## Dependencies
 [Puppeteer](https://github.com/puppeteer/puppeteer)
-https://twitter.com   
-https://giphy.com   
-https://urbandictionary.com   
-http://swquotesapi.digitaljedi.dk/index.html   
-https://github.com/15Dkatz/official_joke_api   
-https://kitsu.io   
-https://jikan.moe   
+[Chalk](https://www.npmjs.com/package/chalk) - optional
+[Discord-Webhook](https://www.npmjs.com/package/webhook-discord)
+and more!
