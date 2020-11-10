@@ -8,14 +8,12 @@ Genshin News is an automated notification system for Discord.
 [![Twitter](https://img.shields.io/twitter/follow/ptrlrd)](https://twitter.com/ptrlrd) 
 
 ## Built With
-Node.js
-HTML
-CSS
+* Node.js
+* HTML
+* CSS
 
 ## Dependencies
-[Puppeteer](https://github.com/puppeteer/puppeteer)
-
-[Chalk](https://www.npmjs.com/package/chalk) - optional
-
-[Discord-Webhook](https://www.npmjs.com/package/webhook-discord)
+* [Puppeteer](https://github.com/puppeteer/puppeteer)
+* [Chalk](https://www.npmjs.com/package/chalk) - optional
+* [Discord-Webhook](https://www.npmjs.com/package/webhook-discord)
 
