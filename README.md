@@ -24,6 +24,3 @@ Visiting MiHoYo's website is very tedious and often extremely slow, I spent too 
 <p align="center"><img src="https://genshinnews.com/images/example.png" width="400"></p>  
 <p align="center"><img src="https://genshinnews.com/images/examplewebsite.png" width="400"></p>  
 <p align="center"><img src="https://genshinnews.com/images/exampleterminal.png" width="400"></p>  
-
-## Installation
-Coming soon..
