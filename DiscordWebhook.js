@@ -43,7 +43,7 @@ http.createServer((req, res) => {
         if (req.url === '/api') {
             if (ip == /*insert IP*/ ) { // used to filter out external requests
                 responseCode = 200;
-                content = fs.readFileSync('./test.json');
+                content = fs.readFileSync('./webhooks.json');
             } else {
                 responseCode = 200;
                 content = fs.readFileSync('./index.html');
