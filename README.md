@@ -20,7 +20,10 @@ Visiting MiHoYo's website is very tedious and often extremely slow, I spent too 
 * [Chalk](https://www.npmjs.com/package/chalk) - optional
 * [Discord-Webhook](https://www.npmjs.com/package/webhook-discord)
 
-## 
+## Screenshots
+<p align="center"><img src="https://genshinnews.com/images/example.png" width="200"></p>  
+<p align="center"><img src="https://genshinnews.com/images/examplewebsite.png" width="200"></p>  
+<p align="center"><img src="https://genshinnews.com/images/exampleterminal.png" width="200"></p>  
 
 ## Installation
 Coming soon..
