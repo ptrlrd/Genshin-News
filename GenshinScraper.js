@@ -1,4 +1,4 @@
-var puppeteer = require("puppeteer");
+var puppeteer = require("puppeteer"); 
 var fs = require("fs");
 var fetch = require("node-fetch");
 
