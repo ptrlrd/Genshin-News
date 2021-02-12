@@ -70,8 +70,7 @@ function postArticles() {
         .then(response => response); // can be consolelogged for troubleshooting
 }
 
-/* Uses post to transfer stats data from server to webserver */
-
+// Transfers stat data to webserver
 function postStatsJson() {
     try {
         let stats = fs.readFileSync('./stats.json');
