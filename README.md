@@ -3,7 +3,7 @@
 # Genshin News
 Genshin News is an automated notification system for Discord. This application scrapes/acquires information from [MiHoYo's news website](https://genshin.mihoyo.com/en/news) and redestributes the information to users through Discord. 
 
-[![Maintained](https://img.shields.io/maintenance/yes/2020)](https://github.com/ptrlrd/Genshin-News/commits/main) 
+[![Maintained](https://img.shields.io/maintenance/yes/2021)](https://github.com/ptrlrd/Genshin-News/commits/main) 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/ptrlrd/Genshin-News/issues) 
 [![Twitter](https://img.shields.io/twitter/follow/ptrlrd)](https://twitter.com/ptrlrd) 
 
