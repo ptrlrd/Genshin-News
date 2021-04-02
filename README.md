@@ -1,4 +1,4 @@
-<p align="center"><img src="https://genshinnews.com/paimon.png" width="200"></p>  
+<p align="center"><img src="https://genshinnews.com/src/logo.png"></p>  
 
 # Genshin News
 Genshin News is an automated notification system for Discord. This application scrapes/acquires information from [MiHoYo's news website](https://genshin.mihoyo.com/en/news) and redestributes the information to users through Discord. 
